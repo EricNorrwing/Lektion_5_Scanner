@@ -7,13 +7,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        
+        Scanner scanner = new Scanner(System.in);
+
+
         boolean isPlaying = true;
 
         System.out.println("Please insert a number: ");
 
+        do {
 
-        while (isPlaying)
+            System.out.println("Input Number: ");
+            int result = scanner.nextInt();
+
+            System.out.println("You picked: " + result);
+
+        }while(true);
+
+
+
+        /*while (isPlaying)
         {
 
             int result = scannerInt();
@@ -47,6 +59,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Insert data");
-        return sc.nextInt();
+        return sc.nextInt(); */
     }
 }
