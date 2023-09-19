@@ -8,6 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        Student benny = new Student();
+
 
 
         boolean isPlaying = true;
@@ -17,11 +19,17 @@ public class Main {
         do {
 
             System.out.println("Input Number: ");
-            int result = scanner.nextInt();
 
-            System.out.println("You picked: " + result);
+            benny.age = scanner.nextInt();
 
-        }while(true);
+            System.out.println("Insert bennys name");
+            benny.name = scanner.next();
+
+
+            System.out.println(benny.name + "s age is: " + benny.age);
+            isPlaying = false;
+
+        }while(isPlaying);
 
 
 
